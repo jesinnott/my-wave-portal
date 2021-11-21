@@ -3,8 +3,10 @@
   "scripts": {
     "accounts": "npx hardhat accounts",
     "compile": "npx hardhat compile",
-    "deploy": "npx hardhat run scripts/run.js",
-    "test": "npx hardhat test"
+    "deploy:sandbox": "npx hardhat run scripts/run.js",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",

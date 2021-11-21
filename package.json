@@ -5,6 +5,7 @@
     "compile": "npx hardhat compile",
     "deploy:sandbox": "npx hardhat run scripts/run.js",
     "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby",
     "test": "npx hardhat test",
     "node": "npx hardhat node"
   },
@@ -15,5 +16,8 @@
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.1",
     "hardhat": "^2.6.8"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
   }
 }
